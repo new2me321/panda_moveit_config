@@ -66,6 +66,12 @@
       <arg name="arm_id" value="$(arg arm_id)" />
     </include>
 
+    <!-- STOMP -->
+    <include file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="stomp" />
+      <arg name="arm_id" value="$(arg arm_id)" />
+    </include>
+    
     <!-- Pilz Industrial Motion -->
     <include file="$(dirname)/planning_pipeline.launch.xml">
       <arg name="pipeline" value="pilz_industrial_motion_planner" />
